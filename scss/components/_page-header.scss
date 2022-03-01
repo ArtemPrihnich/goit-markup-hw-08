@@ -1,3 +1,25 @@
 .page-header {
+  // display: flex;
   border-bottom: 1px solid #ececec;
+}
+
+.page-header__menu-btn {
+  display: block;
+  margin: 10px 0;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  border: transparent;
+  background-color: $accent-color;
+}
+
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-header__nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
 }
