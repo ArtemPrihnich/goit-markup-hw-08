@@ -14,7 +14,13 @@
   padding-right: 15px;
 
   @media screen and (min-width: $mobile) {
-    width: 480px;
+    width: $mobile;
+  }
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    width: $tablet;
+    flex-wrap: wrap;
   }
 }
 
@@ -26,12 +32,22 @@
     text-align: center;
     margin: 0 auto;
   }
+
+  @media screen and (min-width: $tablet) {
+    text-align: center;
+    margin: 0 auto;
+    margin-left: 76px;
+  }
 }
 
-.logo--center {
+.logo--footer {
   @media screen and (max-width: 767px) {
     padding: 0;
     margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    padding: 0 0 20px 0;
   }
 }
 
@@ -48,6 +64,12 @@
   @media screen and (max-width: 767px) {
     margin-bottom: 60px;
   }
+
+  // @media screen and (min-width: $tablet) {
+  //   width: 232px;
+  //   margin-left: 76px;
+  //   text-align: center;
+  // }
 }
 
 .address__text {
@@ -56,6 +78,10 @@
   @media screen and (max-width: 767px) {
     margin-bottom: 8px;
   }
+
+  // @media screen and (min-width: $tablet) {
+  //   margin-bottom: 8px;
+  // }
 }
 
 .address__link {
@@ -80,6 +106,21 @@
   @media screen and (max-width: 767px) {
     margin-bottom: 8px;
   }
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 8px;
+  }
+}
+
+.footer-social-container {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-direction: column;
+
+    width: 206px;
+    margin-right: 89px;
+    padding-top: 5px;
+  }
 }
 
 .join-text {
@@ -94,6 +135,11 @@
     margin: 0 0 20px 0;
     text-align: center;
   }
+
+  @media screen and (min-width: $tablet) {
+    margin: 0 0 20px 0;
+    text-align: center;
+  }
 }
 
 .social-networks--footer {
@@ -101,6 +147,11 @@
   // margin: 0 93px 0 0;
   @media screen and (max-width: 767px) {
     margin: 0 0 60px 0;
+  }
+
+  @media screen and (min-width: $tablet) {
+    margin: 0;
+    padding: 0;
   }
 }
 
@@ -114,6 +165,14 @@
 
 .social-networks__link--white {
   fill: $titel-text-color;
+}
+
+.join-container {
+  @media screen and (min-width: $tablet) {
+    width: 450px;
+    margin: 0 auto;
+    padding-top: 60px;
+  }
 }
 
 .footer-form {
@@ -155,9 +214,15 @@
   @media screen and (max-width: 767px) {
     margin-bottom: 20px;
   }
+
+  @media screen and (min-width: $tablet) {
+    width: 100%;
+    margin-bottom: 20px;
+  }
 }
 
 .mailing-btn {
+  display: block;
   width: 200px;
   padding: 10px 29px;
   margin: 0;
@@ -180,6 +245,10 @@
   background-position: 148px 13px;
 
   @media screen and (max-width: 767px) {
+    margin: 0 auto;
+  }
+
+  @media screen and (min-width: $tablet) {
     margin: 0 auto;
   }
 }

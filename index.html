@@ -20,44 +20,43 @@
                 <a href="#" class="logo">
                 Web<span class="logo__text">Studio</span>
                 </a>
-                <button class="page-header__menu-btn" type="button" data-modal-open></button>
-
-                <!-- <ul class="site-nav">
+                <button class="page-header__menu-btn" type="button"></button>
+                <ul class="site-nav">
                     <li class="site-nav__item"><a href="#" class="site-nav__link site-nav__link--current">Студия</a></li>
                     <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__link">Портфолио</a></li>
                     <li class="site-nav__item"><a href="" class="site-nav__link">Контакты</a></li>
-                </ul> -->
-            </nav>
+                </ul>
 
-            <div class="mobile-menu is-hidden" data-modal>
-                <div class="mobile-menu__container">
-                    <button type="button" class="menu-btn-close" data-modal-close></button>
-                    <ul class="nav-menu">
-                        <li class="nav-menu__item"><a href="#" class="nav-menu__link nav-menu__link--current">Студия</a></li>
-                        <li class="nav-menu__item"><a href="./portfolio.html" class="nav-menu__link">Портфолио</a></li>
-                        <li class="nav-menu__item"><a href="" class="nav-menu__link">Контакты</a></li>
-                    </ul>
-                    <ul class="contacts-mobile">
-                        <li class="contacts-mobile__item">
-                            <a href="tel:+380961111111" class="contacts-mobile__tel-link">
-                                +38 096 111 11 11
-                            </a>
-                        </li>
-                        <li class="contacts-mobile__item">
-                            <a href="mailto:info@devstudio.com" class="contacts-mobile__mail-link">
-                                info@devstudio.com
-                            </a>
-                        </li>
-                    </ul>
-                    <ul class="links-menu">
-                        <li class="links-menu__item"><a class="links-menu__link" href="">Instagram</a></li>
-                        <li class="links-menu__item"><a class="links-menu__link" href="">Twitter</a></li>
-                        <li class="links-menu__item"><a class="links-menu__link" href="">Facebook</a></li>
-                        <li class="links-menu__item"><a class="links-menu__link" href="">LinkedIn</a></li>
-                    </ul>
+                <div class="mobile-menu is-hidden">
+                    <div class="mobile-menu__container">
+                        <button type="button" class="menu-btn-close"></button>
+                        <ul class="nav-menu">
+                            <li class="nav-menu__item"><a href="#" class="nav-menu__link nav-menu__link--current">Студия</a></li>
+                            <li class="nav-menu__item"><a href="./portfolio.html" class="nav-menu__link">Портфолио</a></li>
+                            <li class="nav-menu__item"><a href="" class="nav-menu__link">Контакты</a></li>
+                        </ul>
+                        <ul class="contacts-mobile">
+                            <li class="contacts-mobile__item">
+                                <a href="tel:+380961111111" class="contacts-mobile__tel-link">
+                                    +38 096 111 11 11
+                                </a>
+                            </li>
+                            <li class="contacts-mobile__item">
+                                <a href="mailto:info@devstudio.com" class="contacts-mobile__mail-link">
+                                    info@devstudio.com
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="links-menu">
+                            <li class="links-menu__item"><a class="links-menu__link" href="">Instagram</a></li>
+                            <li class="links-menu__item"><a class="links-menu__link" href="">Twitter</a></li>
+                            <li class="links-menu__item"><a class="links-menu__link" href="">Facebook</a></li>
+                            <li class="links-menu__item"><a class="links-menu__link" href="">LinkedIn</a></li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-            <!-- <ul class="contacts">
+            </nav>
+            <ul class="contacts">
                 <li class="contacts__item">
                     <a href="mailto:info@devstudio.com" class="contacts__link">
                         <svg class="contacts__icon" width="16px" height="12px">
@@ -74,7 +73,7 @@
                         +38 096 111 11 11
                     </a>
                 </li>
-            </ul> -->
+            </ul>
         </div>
     </header>
     
@@ -420,7 +419,7 @@
     <footer class="footer">
         <div class="footer-container">
             <div class="contacts-container">
-                <a href="#" class="logo logo--center">
+                <a href="#" class="logo logo--footer">
                     Web<span class="logo__text logo__text--white">Studio</span>
                 </a>
                 <address class="address">
@@ -429,7 +428,7 @@
                     <a href="tel:+380961111111" class="address__link">+38 096 111 11 11</a>
                 </address>
             </div>
-            <div>
+            <div class="footer-social-container">
                 <p class="join-text">присоединяйтесь</p>
                 <ul class="social-networks social-networks--footer">
                     <li class="social-networks__item social-networks__item--dark">
@@ -462,12 +461,12 @@
                     </li>
                 </ul>
             </div>
-            <div>
+            <div class="join-container">
                 <p class="join-text">подпишитесь на рассылку</p>
                 <form class="footer-form" name="mailing-list" autocomplete="off">
                     <input class="footer-form__input" type="email" name="email" placeholder="E-mail">
-                    <button class="mailing-btn" type="submit">Подписаться</button>
                 </form>
+                <button class="mailing-btn" type="submit">Подписаться</button>
             </div>
         </div>
     </footer>

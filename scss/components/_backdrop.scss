@@ -37,6 +37,11 @@
     width: 450px;
     height: 609px;
   }
+
+  @media screen and (min-width: $tablet) {
+    width: 450px;
+    height: 609px;
+  }
 }
 
 .backdrop__titel {
@@ -49,6 +54,11 @@
   color: $primary-text-color;
 
   @media screen and (max-width: 767px) {
+    width: 370px;
+    line-height: 1.5;
+  }
+
+  @media screen and (min-width: $tablet) {
     width: 370px;
     line-height: 1.5;
   }
@@ -85,6 +95,10 @@
   // width: 448px;
 
   @media screen and (max-width: 767px) {
+    width: 370px;
+  }
+
+  @media screen and (min-width: $tablet) {
     width: 370px;
   }
 }
@@ -180,6 +194,10 @@
   @media screen and (max-width: 767px) {
     height: 15px;
   }
+
+  @media screen and (min-width: $tablet) {
+    height: 15px;
+  }
 }
 
 .checkbox__input {
@@ -219,6 +237,13 @@
   color: $secondary-text-color;
 
   @media screen and (max-width: 767px) {
+    height: 14px;
+
+    font-size: 12px;
+    line-height: 1.66;
+  }
+
+  @media screen and (min-width: $tablet) {
     height: 14px;
 
     font-size: 12px;

@@ -11,6 +11,10 @@
   height: 40px;
   border: transparent;
   background-color: $accent-color;
+
+  @media screen and (min-width: 767px) {
+    display: none;
+  }
 }
 
 .main-nav {
@@ -21,5 +25,8 @@
 .page-header__nav {
   display: flex;
   width: 100%;
-  justify-content: space-between;
+
+  @media screen and (max-width: 767px) {
+    justify-content: space-between;
+  }
 }
