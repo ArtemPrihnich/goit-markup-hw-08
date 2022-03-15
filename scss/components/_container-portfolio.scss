@@ -13,6 +13,11 @@
     padding-top: 60px;
     padding-bottom: 60px;
   }
+
+  @media screen and (min-width: $tablet) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 
 .container-portfolio {
@@ -26,5 +31,9 @@
 
   @media screen and (min-width: $mobile) {
     width: $mobile;
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: $tablet;
   }
 }

@@ -9,6 +9,10 @@
     margin-bottom: 40px;
     flex-wrap: wrap;
   }
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 40px;
+  }
 }
 
 .filter__item {
