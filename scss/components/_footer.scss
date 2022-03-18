@@ -22,6 +22,12 @@
     width: $tablet;
     flex-wrap: wrap;
   }
+
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    width: $desktop;
+    flex-wrap: nowrap;
+  }
 }
 
 .contacts-container {
@@ -33,22 +39,20 @@
     margin: 0 auto;
   }
 
-  @media screen and (min-width: $tablet) {
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
     text-align: center;
     margin: 0 auto;
     margin-left: 76px;
   }
+
+  @media screen and (min-width: $desktop) {
+    margin-right: 70px;
+  }
 }
 
 .logo--footer {
-  @media screen and (max-width: 767px) {
-    padding: 0;
-    margin-bottom: 20px;
-  }
-
-  @media screen and (min-width: $tablet) {
-    padding: 0 0 20px 0;
-  }
+  margin: 0 0 20px 0;
+  padding: 0;
 }
 
 .logo__text--white {
@@ -64,12 +68,6 @@
   @media screen and (max-width: 767px) {
     margin-bottom: 60px;
   }
-
-  // @media screen and (min-width: $tablet) {
-  //   width: 232px;
-  //   margin-left: 76px;
-  //   text-align: center;
-  // }
 }
 
 .address__text {
@@ -79,9 +77,9 @@
     margin-bottom: 8px;
   }
 
-  // @media screen and (min-width: $tablet) {
-  //   margin-bottom: 8px;
-  // }
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 8px;
+  }
 }
 
 .address__link {
@@ -110,10 +108,22 @@
   @media screen and (min-width: $tablet) {
     margin-bottom: 8px;
   }
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 9px;
+  }
 }
 
 .footer-social-container {
-  @media screen and (min-width: $tablet) {
+  @media screen and (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+
+    width: 206px;
+    margin: 0 auto;
+  }
+
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
     display: flex;
     flex-direction: column;
 
@@ -140,6 +150,11 @@
     margin: 0 0 20px 0;
     text-align: center;
   }
+
+  @media screen and (min-width: $desktop) {
+    margin: 12px 0 20px 0;
+    text-align: left;
+  }
 }
 
 .social-networks--footer {
@@ -147,11 +162,16 @@
   // margin: 0 93px 0 0;
   @media screen and (max-width: 767px) {
     margin: 0 0 60px 0;
+    padding: 0;
   }
 
   @media screen and (min-width: $tablet) {
     margin: 0;
     padding: 0;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin: 0 93px 0 0;
   }
 }
 
@@ -168,10 +188,20 @@
 }
 
 .join-container {
-  @media screen and (min-width: $tablet) {
+  @media screen and (max-width: 767px) {
+    max-width: 450px;
+    margin: 0 auto;
+  }
+
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
     width: 450px;
     margin: 0 auto;
     padding-top: 60px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    display: inline-block;
+    width: 570px;
   }
 }
 
@@ -180,7 +210,10 @@
 
   @media screen and (max-width: 767px) {
     flex-direction: column;
-    // align-items: center;
+  }
+
+  @media screen and (max-width: 1199px) {
+    flex-direction: column;
   }
 }
 
@@ -215,14 +248,18 @@
     margin-bottom: 20px;
   }
 
-  @media screen and (min-width: $tablet) {
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
     width: 100%;
     margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 358px;
+    margin-right: 12px;
   }
 }
 
 .mailing-btn {
-  display: block;
   width: 200px;
   padding: 10px 29px;
   margin: 0;
@@ -248,7 +285,7 @@
     margin: 0 auto;
   }
 
-  @media screen and (min-width: $tablet) {
+  @media screen and (max-width: 1199px) {
     margin: 0 auto;
   }
 }

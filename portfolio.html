@@ -20,16 +20,24 @@
                 <a href="#" class="logo">
                     Web<span class="logo__text">Studio</span>
                 </a>
-                <button class="page-header__menu-btn" type="button" data-modal-open></button>
+                <button class="page-header__menu-btn" type="button" data-menu-open2>
+                    <svg width="40px" height="40px">
+                        <use class="page-header__icon-menu" href="./images/symbol-defs.svg#menu-black"></use>
+                    </svg>
+                </button>
                 <ul class="site-nav list">
                     <li class="site-nav__item"><a href="./index.html" class="site-nav__link">Студия</a></li>
                     <li class="site-nav__item"><a href="#" class="site-nav__link site-nav__link--current">Портфолио</a></li>
                     <li class="site-nav__item"><a href="" class="site-nav__link">Контакты</a></li>
                 </ul>
 
-                <div class="mobile-menu is-hidden" data-modal>
+                <div class="mobile-menu is-hidden" data-menu>
                     <div class="mobile-menu__container">
-                        <button type="button" class="menu-btn-close" data-modal-close></button>
+                        <button type="button" class="menu-btn-close" data-menu-close>
+                            <svg width="40px" height="40px">
+                                <use href="./images/symbol-defs.svg#close-black"></use>
+                            </svg>
+                        </button>
                         <ul class="nav-menu">
                             <li class="nav-menu__item"><a href="./index.html" class="nav-menu__link">Студия</a></li>
                             <li class="nav-menu__item"><a href="#" class="nav-menu__link nav-menu__link--current">Портфолио</a></li>
@@ -273,8 +281,9 @@
                 <p class="join-text">подпишитесь на рассылку</p>
                 <form class="footer-form" name="mailing-list" autocomplete="off">
                     <input class="footer-form__input" type="email" name="email" placeholder="E-mail">
+                    <button class="mailing-btn" type="submit">Подписаться</button>
                 </form>
-                <button class="mailing-btn" type="submit">Подписаться</button>
+                <!-- <button class="mailing-btn" type="submit">Подписаться</button> -->
             </div>
         </div>
     </footer>

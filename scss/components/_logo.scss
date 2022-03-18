@@ -20,6 +20,12 @@
     padding-top: 26px;
     padding-bottom: 26px;
   }
+
+  @media screen and (min-width: $desktop) {
+    padding-top: 24px;
+    padding-bottom: 25px;
+    margin-right: 93px;
+  }
 }
 
 .logo__text {

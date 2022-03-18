@@ -8,6 +8,11 @@
     padding-top: 21px;
     padding-bottom: 21px;
   }
+
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    padding: 0;
+  }
 }
 
 .contacts__item:not(:last-child) {
@@ -15,6 +20,11 @@
 
   @media screen and (min-width: $tablet) {
     margin-bottom: 10px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-right: 50px;
+    margin-bottom: 0;
   }
 }
 
@@ -44,6 +54,14 @@
     font-size: 12px;
     line-height: 1.17;
   }
+
+  @media screen and (min-width: $desktop) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    font-size: 14px;
+    line-height: 1.14;
+  }
 }
 
 .contacts__icon {
@@ -56,5 +74,12 @@
     height: 10px;
 
     margin-right: 8px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 16px;
+    height: 12px;
+
+    margin-right: 10px;
   }
 }
