@@ -1,15 +1,11 @@
 .advantage {
-  // padding-top: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 
-  @media screen and (max-width: 767px) {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
-
-  @media screen and (min-width: $tablet) {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
+  // @media screen and (min-width: $tablet) {
+  //   padding-top: 60px;
+  //   padding-bottom: 60px;
+  // }
 
   @media screen and (min-width: $desktop) {
     padding-top: 94px;
@@ -23,12 +19,12 @@
 
 .advantage__list {
   @extend %list;
-  // display: flex;
+  display: block;
   // padding-bottom: 0;
 
-  @media screen and (max-width: 767px) {
-    display: block;
-  }
+  // @media screen and (max-width: 767px) {
+  //   display: block;
+  // }
 
   @media screen and (min-width: $tablet) {
     display: flex;
@@ -36,7 +32,7 @@
   }
 
   @media screen and (min-width: $desktop) {
-    display: flex;
+    // display: flex;
     flex-wrap: nowrap;
   }
 }

@@ -1,8 +1,7 @@
 .logo {
   display: block;
-  // padding-top: 24px;
-  // padding-bottom: 25px;
-  // margin-right: 93px;
+  padding-top: 16px;
+  padding-bottom: 16px;
 
   color: $accent-color;
   font-family: $secondary-font-family;
@@ -11,10 +10,10 @@
   line-height: 1.16;
   text-decoration: none;
 
-  @media screen and (max-width: 767px) {
-    padding-top: 16px;
-    padding-bottom: 16px;
-  }
+  // @media screen and (min-width: $mobile) {
+  //   padding-top: 16px;
+  //   padding-bottom: 16px;
+  // }
 
   @media screen and (min-width: $tablet) {
     padding-top: 26px;
