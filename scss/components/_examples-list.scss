@@ -88,6 +88,27 @@
   }
 }
 
+.photo-examples {
+  display: block;
+  height: 294px;
+
+  @media screen and (max-width: 479px) {
+    width: 100%;
+  }
+
+  @media screen and (min-width: $mobile) {
+    width: 450px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: 354px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 370px;
+  }
+}
+
 .examples__container {
   width: 100%;
   height: 294px;
@@ -104,11 +125,19 @@
 
 .examples__description {
   margin: 0;
-  padding: 63px 24px;
+  padding: 77px 24px;
 
   font-size: 18px;
   line-height: 28px;
   color: $titel-text-color;
+
+  @media screen and (min-width: $tablet) {
+    padding: 49px 24px 77px 24px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding: 63px 24px;
+  }
 }
 
 .examples__info {

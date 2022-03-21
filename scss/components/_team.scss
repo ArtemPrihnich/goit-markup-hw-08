@@ -74,6 +74,26 @@
   // }
 }
 
+.photo-team {
+  display: block;
+
+  @media screen and (max-width: 479px) {
+    width: 100%;
+  }
+
+  @media screen and (min-width: $mobile) {
+    width: 450px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: 354px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 270px;
+  }
+}
+
 .information {
   padding-top: 30px;
   // padding-bottom: 30px;
