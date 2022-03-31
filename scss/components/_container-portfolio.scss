@@ -3,12 +3,7 @@
   flex-wrap: wrap;
   margin-left: auto;
   margin-right: auto;
-  // padding-top: 94px;
-  // padding-bottom: 94px;
 
-  // @media screen and (min-width:$mobile) {
-  //   $mobile
-  // }
   @media screen and (max-width: 767px) {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -28,7 +23,6 @@
 .container-portfolio {
   display: flex;
   flex-wrap: wrap;
-  // width: 290px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;

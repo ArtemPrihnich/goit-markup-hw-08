@@ -24,9 +24,6 @@
   left: 50%;
   transform: translate(-50%, -50%);
 
-  // min-width: 304px;
-  // max-width: 450px;
-  // width: 100%;
   height: 609px;
   padding: 40px 0;
 
@@ -43,7 +40,6 @@
 
   @media screen and (min-width: $mobile) {
     width: 450px;
-    // height: 609px;
   }
 
   @media screen and (min-width: $desktop) {
@@ -57,7 +53,6 @@
   margin: 0 auto;
   font-weight: 700;
   font-size: 20px;
-  // line-height: 23px;
   text-align: center;
   color: $primary-text-color;
 
@@ -65,11 +60,6 @@
     width: 370px;
     line-height: 1.5;
   }
-
-  // @media screen and (min-width: $tablet) {
-  //   width: 370px;
-  //   line-height: 1.5;
-  // }
 
   @media screen and (min-width: $desktop) {
     width: 448px;
@@ -105,7 +95,6 @@
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  // width: 448px;
 
   @media screen and (max-width: 479px) {
     padding: 0 15px;
@@ -208,17 +197,9 @@
   align-items: center;
   margin-top: 20px;
 
-  // @media screen and (max-width: 767px) {
-  //   height: 15px;
-  // }
-
   @media screen and (max-width: 1199px) {
     height: 15px;
   }
-
-  // @media screen and (min-width: $desktop) {
-  //   height: 15px;
-  // }
 }
 
 .checkbox__input {
@@ -251,18 +232,8 @@
 }
 
 .checkbox__accept {
-  // font-size: 14px;
-  // line-height: 24px;
   letter-spacing: 0.03em;
-
   color: $secondary-text-color;
-
-  // @media screen and (max-width: 767px) {
-  //   height: 14px;
-
-  //   font-size: 12px;
-  //   line-height: 1.66;
-  // }
 
   @media screen and (max-width: 1199px) {
     height: 14px;
