@@ -69,6 +69,18 @@ body {
   display: block;
 }
 
+@media screen and (min-width: 480px) {
+  .photo {
+    height: 294px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .photo {
+    width: 100%;
+  }
+}
+
 .page-header {
   border-bottom: 1px solid #ececec;
 }
@@ -330,6 +342,17 @@ body {
 }
 
 .mobile-menu__container {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 48px 40px;
 }
 
@@ -360,7 +383,6 @@ body {
 
 .contacts-mobile {
   display: block;
-  margin-top: 306px;
 }
 
 .contacts-mobile__item {
@@ -369,6 +391,12 @@ body {
 
 .contacts-mobile__item:last-child {
   margin-bottom: 0;
+}
+
+@media screen and (max-width: 369px) {
+  .contacts-mobile__item {
+    margin-bottom: 16px;
+  }
 }
 
 .contacts-mobile__tel-link {
@@ -393,10 +421,19 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-top: 64px;
 }
 
+@media screen and (max-width: 369x) {
+  .links-menu {
+    margin-top: 32px;
+  }
+}
+
 .links-menu__item {
+  margin-bottom: 20px;
   margin-right: 10px;
   padding-right: 10px;
   border-right: 1px solid rgba(33, 33, 33, 0.2);
@@ -408,6 +445,18 @@ body {
   border-right: transparent;
 }
 
+@media screen and (min-width: 320px) {
+  .links-menu__item:nth-child(n + 3) {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 369px) {
+  .links-menu__item:last-child {
+    margin-bottom: 0;
+  }
+}
+
 .links-menu__link {
   font-weight: 500;
   font-size: 18px;
@@ -417,13 +466,17 @@ body {
   color: #2196f3;
 }
 
+.container-hero {
+  background-color: #c4c4c4;
+}
+
 .hero {
+  max-width: 1600px;
   padding-top: 118px;
   padding-bottom: 118px;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  background-color: #c4c4c4;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/overlay480.jpg);
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/overlay480.jpg);
   background-repeat: no-repeat;
@@ -545,6 +598,15 @@ body {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .advantage__item {
+    margin-bottom: 30px;
+  }
+  .advantage__item:last-child {
+    margin-bottom: 0;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .advantage__item {
     width: 354px;
@@ -649,6 +711,7 @@ body {
     min-width: 304px;
     max-width: 450px;
     width: 100%;
+    height: 580px;
   }
 }
 
@@ -1826,7 +1889,13 @@ body {
 }
 
 .examples__link {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   position: relative;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1848,6 +1917,12 @@ body {
           transform: translateY(0);
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .examples__link--height {
+    height: 100%;
+  }
+}
+
 .examples__container {
   width: 100%;
   height: 100%;
@@ -1866,10 +1941,22 @@ body {
 
 .examples__description {
   margin: 0;
-  padding: 77px 24px;
+  padding: 15px 15px;
   font-size: 18px;
-  line-height: 28px;
+  line-height: 1.55;
   color: #ffffff;
+}
+
+@media screen and (min-width: 340px) {
+  .examples__description {
+    padding: 40px 20px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .examples__description {
+    padding: 77px 24px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -1885,18 +1972,15 @@ body {
 }
 
 .examples__info {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   padding: 20px 24px;
   border: 1px solid #eeeeee;
   border-top: transparent;
   position: relative;
   z-index: 1;
   background-color: #ffffff;
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .examples__info--height {
-    height: 147.4px;
-  }
 }
 
 .examples__titel {

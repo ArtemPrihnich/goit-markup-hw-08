@@ -27,6 +27,13 @@
 }
 
 .advantage__item {
+  @media screen and (max-width:767px) {
+    margin-bottom: 30px;
+
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
   @media screen and (min-width: $tablet) {
     width: 354px;
     margin-right: 30px;

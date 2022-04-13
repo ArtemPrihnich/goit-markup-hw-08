@@ -40,4 +40,12 @@ body {
 
 .photo {
   display: block;
+
+  @media screen and (min-width:$mobile) {
+    height: 294px;
+  }
+
+  @media screen and (max-width:480px) {
+    width: 100%;
+  }
 }
